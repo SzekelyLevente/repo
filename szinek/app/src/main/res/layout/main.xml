@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/layout">
+
+	<SeekBar
+		android:id="@+id/csuszkar"
+		android:layout_width="fill_parent"
+		android:layout_height="150px"
+		android:min="0"
+		android:max="255"/>
+	
+	<SeekBar
+		android:layout_below="@id/csuszkar"
+		android:id="@+id/csuszkag"
+		android:layout_width="fill_parent"
+		android:layout_height="150px"
+		android:min="0"
+		android:max="255"/>
+	
+	<SeekBar
+		android:layout_below="@id/csuszkag"
+		android:id="@+id/csuszkab"
+		android:layout_width="fill_parent"
+		android:layout_height="150px"
+		android:min="0"
+		android:max="255"/>
+	
+	<TextView
+		android:id="@+id/red"
+		android:layout_width="match_parent"
+		android:layout_height="150px"
+		android:text="red: 0"
+		android:textSize="30dp"
+		android:layout_below="@id/csuszkab"/>
+	
+	<TextView
+		android:id="@+id/green"
+		android:layout_width="match_parent"
+		android:layout_height="150px"
+		android:text="green: 0"
+		android:textSize="30dp"
+		android:layout_below="@id/red"/>
+	
+	<TextView
+		android:id="@+id/blue"
+		android:layout_width="match_parent"
+		android:layout_height="150px"
+		android:text="blue: 0"
+		android:textSize="30dp"
+		android:layout_below="@id/green"/>
+	
+	<TextView
+		android:id="@+id/szin"
+		android:layout_width="700px"
+		android:layout_height="500px"
+		android:text="(0;0;0)"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:textSize="30dp"
+		android:background="#000000"
+		android:textColor="#FFFFFF"
+		android:layout_below="@id/blue"/>
+		/>
+</RelativeLayout>
